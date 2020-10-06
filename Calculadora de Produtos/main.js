@@ -73,8 +73,17 @@ function addList2(){
 let sum = 0;
 calc.onclick = function(){
     let li = document.createElement('li');
+    if(a.length === 0){
+        msg.innerHTML = "Nenhum Valor para Calcular";
+        return;
+    }
     a.forEach(function(item){
         let x = item.textContent;
+         console.log(x.substring(0,5));
+        if(x.substring(0,5) === "TOTAL"){
+            return;
+        }
+        console.log("is Executing");
         let aux =  x.substring(3,x.length);
         sum += Number(aux);
    });
