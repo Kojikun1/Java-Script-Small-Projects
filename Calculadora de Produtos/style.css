@@ -1,0 +1,58 @@
+#main{
+    width: 800px;
+    margin: auto;
+}
+.button{
+    padding: 5px 15px;
+    font-size: 18px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: #fff;
+}
+.button:hover{
+    background-color: lightblue;
+    color: black;
+}
+.input{
+    padding: 5px 10px;
+}
+.input:focus{
+    border: 2px solid blue;
+}
+#msg{
+   color: red;
+}
+#dados{
+    width: 40%;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+#dados2{
+    width: 60%;
+    height: 400px;
+    padding-top: 20px;
+    float: right;
+    clear: right;
+}
+.box{
+    width: 100%;
+    background-color: lightgray;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 800px;
+}
+.box ul li{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 200px;
+}
+.box ul li:hover{
+    background-color: blue;
+}
+#main label{
+    font-size: 16px;
+}

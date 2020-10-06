@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank - Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src='../scripts/bancoslist.js'></script>
+</head>
+<body>
+    <div class="main">
+    <h1>Transferencias</h1>
+    <div class="main-box">
+        <button class="button" id="contas">Conta</button>
+        <button class="button" id="transf">Tranferencias</button>
+        <button class="button" id="pag">Pagamentos</button>
+        <button class="button" id="cons">Consultas</button>
+        <button class="button" id="empres">Emprestimos</button>
+    </div>
+        <div class="main-box">
+            <label for="titular">Titular :</label>
+            <input id="titular" type="text" class="input-text">
+            <label for="conta">Conta :</label>
+            <input id="conta" type="text">
+            <label for="dig">Dig :</label>
+            <input type="text" id="dig">
+        </div>
+        <div class="main-box">
+             <label>Banco Destino</label>
+             <select id="banco" class="select"></select>
+             <label>Outros Bancos</label>
+             <input type="checkbox" id="checkB">
+            <label>Tipo de Conta</label>
+            <select id="tconta" class="select"></select>
+        </div>
+<div class="main-box">
+    <form>
+        <table>
+            <tr>
+                <td class="td-space">
+                    <label for="agend1">Proximo Dia Util</label>
+                    <input class="daychange" id="agend1" type="radio" name="agendar">
+                </td>
+                <td class="td-space">
+                    <label for="agend2">Agendar Data</label>
+                    <input class="daychange" id="agend2" type="radio" name="agendar"> 
+                </td>
+                <td class="td-space">   
+                    <label for="agend3">Data</label>
+                    <input id="agend3" type="date" class="select">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</div>
+    <script type='text/javascript' src="../scripts/conta.js"></script>
+    <script type='text/javascript' src="../scripts/bancos.js"></script>
+    <script type='text/javascript' src="../scripts/validDay.js"></script>
+    <script type='text/javascript' src="../scripts/links2.js"></script>
+</body>
+</html>

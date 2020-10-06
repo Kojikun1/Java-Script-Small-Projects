@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Conversor Numerico</title>
+     <meta charset='utf-8'>
+     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+     <link rel="stylesheet" type='text/css' href="style.css">
+</head>
+<body>
+    <div class='main'>
+        <label for='input1' id='label1'>Decimal: </label>
+        <input type='text' id="input1" class='input-text'>
+        <label for='input2' id='label2'>Binario: </label>
+        <input type='text' id="input2" class='input-text'>
+        <button id="converter" class="btn-default">Converter</button>
+        <button id="clean" class="btn-default">Clean</button>
+        <div class="radio-box">
+            <label for="dectobin">Decimal to Binario</label>
+            <input type="radio" id="dectobin" name='operation' value='1' checked>
+            <label for="bintodec">Binario to Decimal</label>
+            <input type="radio" id="bintodec" name='operation' value="2">
+        </div>
+        <p id='outputError'></p>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

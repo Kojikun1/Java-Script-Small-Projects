@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: lightgray;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.btn{
+    padding: 5px 10px;
+}
+.input{
+    padding: 5px 10px;
+    width: 300px;
+}
+.input:focus{
+    border: 1px solid blue;
+}
+.main img{
+    width: 80%;
+}

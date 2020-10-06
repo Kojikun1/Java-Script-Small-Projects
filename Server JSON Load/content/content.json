@@ -1,0 +1,6 @@
+[
+    {"name": "Koji","nick":"Koji","age": 27, "status": true},
+    {"name": "Takeru","nick":"Take","age": 28, "status": true},
+    {"name": "Kitamura","nick":"Kitamura","age": 25, "status": false},
+    {"name": "Hikaru","nick":"Hikaru","age": 25, "status": true}
+]

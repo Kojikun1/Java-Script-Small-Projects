@@ -1,0 +1,33 @@
+.input-text{
+    width: 280px;
+    background-color: lightgray;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+}
+#conta{
+    width: 180px;
+    background-color: lightgray;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+}
+#dig{
+    width: 20px;
+    background-color: lightgray;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+}
+.select{
+    padding: 5px 10px;
+    background-color: rgb(238, 231, 231);
+}
+.input-radio{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.td-space{
+    padding: 5px 20px;
+    margin-left: 40px;
+}

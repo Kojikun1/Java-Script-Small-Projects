@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-left: 400px;
+}
+body{
+    background-color: gray;
+}
+.main{
+    width: 960px;
+    margin: auto;
+    background-color: rgb(144, 159, 179);
+    height: 800px;
+}
+.main-box{
+    border: 1px solid black;
+    padding: 20px 40px;
+    margin: 10px;
+}
+.button{
+   padding: 10px 20px;
+   width: 150px;
+   font-family: arial;
+   background-color: rgb(111, 111, 211);
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   margin: 10px 5px;
+}
+.button:hover{
+   border: 1px solid #fff;
+}
+.int-box{
+    border: 1px solid #fff;
+    width: 300px;
+    padding: 20px;
+    font-family: arial;
+    font-size: 18px;
+}
+.second{
+    float:right;
+    margin-right: 150px;
+}

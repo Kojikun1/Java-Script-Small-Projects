@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+}
+h1{
+    margin-left: 300px;
+}
+.main{
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: lightgray;
+}
+.main table{
+    margin-left: 100px;
+}
+.output{
+    width: 240px;
+    padding: 8px 15px;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-bottom: 1px solid black;
+}
+.btn{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(101, 130, 139);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(140, 165, 173);
+}
+table td{
+    padding: 10px;
+}
+.inside{
+    margin-left: 150px;
+}
+.inside p{
+    margin-left: 160px;
+    font-size: 48px;
+}
+.image-locker{
+    width: 280px;
+    margin-left: 100px;
+    margin-top: 20px;
+}

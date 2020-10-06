@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enigma Project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <img src="bletchley-behind-the-scenes-29.jpg" alt="enigma image">
+        <h1>Enigma Encrypt</h1>
+        <table>
+        <tr>
+            <td>
+                <label for="msg">Mensagem :</label>
+            </td>
+            <td>
+                <input type="text" id="msg" class="input">
+            </td>
+            <td>
+                <button class="btn" id="gnrt" onclick="gCode(0)">Generate</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="code">Codigo :</label>
+            </td>
+            <td>
+                <input type="text" id="code" class="input">
+            </td>
+            <td>
+                <button class="btn" onclick="gCode(1)">Read Code</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Output : </p>
+            </td>
+            <td>
+                <p id="output"></p>
+            </td>
+            <td>
+                <button class="btn" id="btn-copy">Copy</button>
+            </td>
+        </tr>
+        </table> 
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
