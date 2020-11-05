@@ -36,19 +36,19 @@ function addList(){
         
     }
 }
-let b = ul.childNodes;
-let a = ul2.childNodes;
+let ulList1 = ul.childNodes;
+let ulList2 = ul2.childNodes;
 btnClean.onclick = function(){
     pdt.value = '';
     valor.value = '';
     msg.innerHTML = '';
-    for(let i = b.length - 1; i >= 0; i--)
+    for(let i = ulList1.length - 1; i >= 0; i--)
     {
-        b[i].remove();
+        ulList1[i].remove();
     }
-    for(let i = a.length - 1; i >= 0; i--)
+    for(let i = ulList2.length - 1; i >= 0; i--)
     {
-        a[i].remove();
+        ulList2[i].remove();
     }
 }
 btn2.addEventListener("click", addList2);
@@ -73,18 +73,18 @@ function addList2(){
 let sum = 0;
 calc.onclick = function(){
     let li = document.createElement('li');
-    if(a.length === 0){
+    if(ulList2.length === 0){
         msg.innerHTML = "Nenhum Valor para Calcular";
         return;
     }
-    a.forEach(function(item){
+    ulList2.forEach(function(item){
         let x = item.textContent;
          console.log(x.substring(0,5));
         if(x.substring(0,5) === "TOTAL"){
             return;
         }
         console.log("is Executing");
-        let aux =  x.substring(3,x.length);
+        let aux =  x.substring(3,x.length).replace(',','.');
         sum += Number(aux);
    });
     let text = document.createTextNode("TOTAL R$ " + sum.toFixed(2));
@@ -94,10 +94,10 @@ calc.onclick = function(){
     sum = 0;
 };
 remove1.onclick = function(){
-    b[b.length - 1].remove();
+    ulList1[ulList1.length - 1].remove();
 }
 remove2.onclick = function(){
-    a[a.length - 1].remove();
+    ulList2[ulList2.length - 1].remove();
 }
 pdt.onfocus = function(){
     focus1 = true;
