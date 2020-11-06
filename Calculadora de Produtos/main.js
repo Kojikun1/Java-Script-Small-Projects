@@ -11,6 +11,8 @@ let remove1 = document.getElementById('remove1');
 let remove2 = document.getElementById('remove2');
 let ul = document.createElement('ul');
 let ul2 = document.createElement('ul');
+let add_mult_pdt = document.querySelector('#add-mult-pdt');
+let add_mult_valor = document.querySelector('#add-mult-valor');
 let focus1 = false;
 let focus2 = false;
 dados.appendChild(ul);
@@ -30,25 +32,14 @@ function addList(){
         let text = document.createTextNode(pdt.value);
         li.appendChild(text);
         ul.appendChild(li);
-        msg.innerHTML = "";
-        pdt.value = '';
-        valor.focus();
+        if(!add_mult_pdt.checked){
+            msg.innerHTML = "";
+            pdt.value = '';
+            valor.focus();
+        }else{
+            msg.innerHTML = "";
+        }
         
-    }
-}
-let ulList1 = ul.childNodes;
-let ulList2 = ul2.childNodes;
-btnClean.onclick = function(){
-    pdt.value = '';
-    valor.value = '';
-    msg.innerHTML = '';
-    for(let i = ulList1.length - 1; i >= 0; i--)
-    {
-        ulList1[i].remove();
-    }
-    for(let i = ulList2.length - 1; i >= 0; i--)
-    {
-        ulList2[i].remove();
     }
 }
 btn2.addEventListener("click", addList2);
@@ -65,11 +56,33 @@ function addList2(){
         let text = document.createTextNode("R$ " + valor.value);
         li.appendChild(text);
         ul2.appendChild(li);
-        msg.innerHTML = "";
-        valor.value = '';
-        pdt.focus();
+        if(!add_mult_valor.checked){
+            msg.innerHTML = "";
+            valor.value = '';
+            pdt.focus();
+        }else{
+            msg.innerHTML = "";
+        }
     };
 };
+let ulList1 = ul.childNodes;
+let ulList2 = ul2.childNodes;
+btnClean.onclick = function(){
+    pdt.value = '';
+    valor.value = '';
+    msg.innerHTML = '';
+    add_mult_pdt.checked = false;
+    add_mult_valor.checked = false;
+    for(let i = ulList1.length - 1; i >= 0; i--)
+    {
+        ulList1[i].remove();
+    }
+    for(let i = ulList2.length - 1; i >= 0; i--)
+    {
+        ulList2[i].remove();
+    }
+}
+
 let sum = 0;
 calc.onclick = function(){
     let li = document.createElement('li');
@@ -122,6 +135,8 @@ window.addEventListener("keydown", function(event){
 window.onload = function(){
     pdt.value = '';
     valor.value = '';
+    add_mult_pdt.checked = false;
+    add_mult_valor.checked = false;
 };
 
 
